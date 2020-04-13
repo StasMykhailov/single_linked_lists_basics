@@ -34,9 +34,9 @@ class SingleLinkedList:
         return '->'.join(list_of_values)
 
     def append_new_node(self, value):
-        if not value:
+        if value is None:
             return None
-        new_node = SingleLinkedListNode(value)
+        new_node = SingleLinkedListNode(value=value)
         if self.head is None:
             self.head = new_node
             return new_node

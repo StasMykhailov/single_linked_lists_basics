@@ -5,7 +5,7 @@ class SingleLinkedListNode:
         self.next_node = next_node
 
     def __str__(self):
-        return self.value
+        return str(self.value)
 
 
 class SingleLinkedList:
